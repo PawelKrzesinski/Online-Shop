@@ -360,7 +360,7 @@ button:focus, input:focus {
 	top: 10px;
 	left: 400px;
 } 
-.first {
+.top-left {
 	  background-color: rgb(250, 146, 27);
 	width: 60px;
 	height: 30px;
@@ -369,10 +369,10 @@ button:focus, input:focus {
 	border-radius: 100%/100px 0px 0px 0px;
 	position: fixed;
 	top: 8px;
-	left: 645px;
+	left: 545px;
 	z-index: 0;
   }
-.second {
+.top-mid {
 	background-color: rgb(250, 146, 27);
 	width: 40px;
 	height: 40px;
@@ -381,11 +381,11 @@ button:focus, input:focus {
 	border-radius: 10px 10px 0px 0px;
 	position: fixed;
 	top: 0px;
-	left: 700px;
+	left: 600px;
 	z-index: 1;
   
   }
-.third {
+.top-right {
 	background-color: rgb(250, 146, 27);
 	width: 60px;
 	height: 30px;
@@ -394,11 +394,11 @@ button:focus, input:focus {
 	border-radius: 100%/0px 100px 0px 0px;
 	position: fixed;
 	top: 8px;
-	left: 735px;
+	left: 635px;
 	z-index: 0;
   }
   
-.fourth {
+.mid-left {
 	width: 65px; 
 	height: 15px;  
 	border: solid 3px #000;
@@ -406,13 +406,13 @@ button:focus, input:focus {
 	border-radius: 50%/10px 10px 0 0;
 	position: fixed;
 	top: 31px;
-	left: 648px;
+	left: 548px;
 	background-color: rgb(250, 146, 27);
 	border-left: none;
 	border-right: none;
   }
   
-.fifth {
+.mid-mid {
 	width: 50px; 
 	height: 20px;  
 	border: solid 3px #000;
@@ -420,7 +420,7 @@ button:focus, input:focus {
 	border-radius: 60%/20px 20px 0 0;
 	position: fixed;
 	top: 25px;
-	left: 695px;
+	left: 595px;
 	z-index: inherit;
 	background-color: rgb(250, 146, 27);
 	border-left: none;
@@ -428,7 +428,7 @@ button:focus, input:focus {
   }
   
   
-.sixth {
+.mid-right {
 	
 	width: 65px; 
 	height: 15px; 
@@ -437,12 +437,12 @@ button:focus, input:focus {
 	border-radius: 50%/10px 10px 0 0;
 	position: fixed;
 	top: 31px;
-	left: 728px;
+	left: 628px;
 	background-color: rgb(250, 146, 27);
 	border-left: none;
 	border-right: none;
   }
-.seventh {
+.bottom {
 	background-color: rgb(250, 146, 27);
 	width: 150px;
 	height: 20px;
@@ -451,7 +451,7 @@ button:focus, input:focus {
 	position: fixed;
 	z-index: 2;
 	top: 45px;
-	left: 645px;
+	left: 545px;
   }
 
 .handRestLeft {
@@ -463,7 +463,7 @@ button:focus, input:focus {
 	border-style: solid;
 	position: fixed;
 	top: 18px;
-	left: 627px;
+	left: 527px;
 	z-index: 3;
 	border-radius: 100%/50px 10px 0 20px;
 }
@@ -478,30 +478,30 @@ button:focus, input:focus {
 	border-style: solid;
 	position: fixed;
 	top: 18px;
-	left: 791px;
+	left: 691px;
 	z-index: 3;
 	border-radius: 100%/10px 50px 20px 0px;
 }
 
 .deco {
 	width: 8px;
-	height: 28px;
-	border: 2px solid black;
+	height: 8px;
+	border: 1px solid black;
 	border-radius: 100%/10px 10px 10px 10px;
 	background-color: rgb(250, 146, 27);
 	position: fixed;
 	top: 30px;
-	left: 796px;
+	left: 696px;
 	z-index: 5;
 }
 .deco1 {
 	width: 8px;
-	height: 28px;
-	border: 2px solid black;
+	height: 8px;
+	border: 1px solid black;
 	border-radius: 100%/10px 10px 10px 10px;
 	background-color: rgb(250, 146, 27);
 	position: fixed;
 	top: 30px;
-	left: 635px;
+	left: 535px;
 	z-index: 5;
 }
