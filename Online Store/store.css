@@ -8,23 +8,33 @@ header{
 	padding-left: 40px;
 	background-color: #232f3e ;
 	font-size: 3em;
-	font-weight: bold;
+	font-weight: 900;
 	color: rgb(250, 146, 27);
 	border: 0;
 	font-style: italic;
 	-webkit-text-stroke: 1px black;
-	opacity: 0.80;
+
 	position: fixed;
 	width: 100%;
 	z-index: 1;
 }
+.headerSpan {
+background: -webkit-linear-gradient(#eee, rgb(85, 85, 85));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: white;
+
+}
+.backgroundImage {
+	height: 100%;
+	width: 100%;
 	font-family: 'Roboto', sans-serif;
 	background: url("./images/hero-bcg.jpeg");
 	background-repeat: no-repeat;
@@ -32,13 +42,15 @@ body {
 	background-position: center;
 }
 
+
+
 .navbar {
 	width: 	100%;
 	border:	5px solid black;
 	border-left: 0;
 	border-right: 0;
 	box-sizing: border-box;
-	background-color: grey;
+	background-color: rgba(155, 154, 154, 0.9);
 	position: fixed;
 	top: 68px;
 	z-index: 1;
@@ -52,15 +64,18 @@ body {
 
 }
 #navigation li{
-	font-size: 2.5em;
+	font-size: 2.3em;
 	font-weight: bold;
 	margin-left: 40px;
 	margin-right: 40px;
 	color: rgb(228, 134, 26);
 	-webkit-text-stroke: 1px black;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 #navigation li:hover {
 	background-color: rgb(85, 85, 85);
+	font-size: 3em;
 }
 
 
@@ -70,16 +85,13 @@ body {
 }
 
 .sCart {
-	float: right;
 	display: flex;
-	font-size: 2.5em;
+	font-size: 2.3em;
 	font-weight: bold;
 	color: rgb(228, 134, 26);
 	-webkit-text-stroke: 1px black;
 	}
-.sCart:hover {
-	background-color: rgb(85, 85, 85);
-}
+
 .shopping-cart {
 	width: 750px;
 	height: 423px;
@@ -92,16 +104,26 @@ body {
 	position: fixed;
 	top: 60px;
 	right: 150px;
-	float: left;
 	border: 5px solid #232f3e;
+	opacity: 1 !important;
 	z-index: 1;
-	opacity: 0.95;
+	transition: 1s all;
+	transform: scale(0) ;
+	transform-origin: 100% 0%;
+}
+.sCart:hover {
+	background-color: rgb(85, 85, 85);
+	font-size: 3em;
+	
+}
+.sCart:hover > .shopping-cart {
+	transform: scale(1);
 }
 .title {
 	height: 40px;
 	padding: 5px 0px 30px;
 	color: rgb(250, 146, 27);
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
 	border-top-left-radius: 30px;
@@ -168,14 +190,14 @@ button {
 }
 
 .description {
-	padding-top: 10px;
+	
 	margin-right: 60px;
 	width: 115px;
 }
 
 .description span {
 	display: block;
-	font-size: 18px;
+	font-size: 0.35em;
 	color: black;
 	font-weight: 400;
 }
@@ -231,18 +253,6 @@ button:focus, input:focus {
 	color: black;
 	font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .maindiv {
 	display: grid;
@@ -343,4 +353,155 @@ button:focus, input:focus {
 		margin-right: 20px;
 	}
 
+}
+.container {
+	z-index: 2;
+	position: fixed;
+	top: 10px;
+	left: 400px;
+} 
+.first {
+	  background-color: rgb(250, 146, 27);
+	width: 60px;
+	height: 30px;
+	border: 3px solid black;
+	border-color: black black transparent black;
+	border-radius: 100%/100px 0px 0px 0px;
+	position: fixed;
+	top: 8px;
+	left: 645px;
+	z-index: 0;
+  }
+.second {
+	background-color: rgb(250, 146, 27);
+	width: 40px;
+	height: 40px;
+	border: 3px solid black;
+	border-color: black black transparent black;
+	border-radius: 10px 10px 0px 0px;
+	position: fixed;
+	top: 0px;
+	left: 700px;
+	z-index: 1;
+  
+  }
+.third {
+	background-color: rgb(250, 146, 27);
+	width: 60px;
+	height: 30px;
+	border: 3px solid black;
+	border-color: black black transparent black;
+	border-radius: 100%/0px 100px 0px 0px;
+	position: fixed;
+	top: 8px;
+	left: 735px;
+	z-index: 0;
+  }
+  
+.fourth {
+	width: 65px; 
+	height: 15px;  
+	border: solid 3px #000;
+	border-color: #000 transparent transparent transparent;
+	border-radius: 50%/10px 10px 0 0;
+	position: fixed;
+	top: 31px;
+	left: 648px;
+	background-color: rgb(250, 146, 27);
+	border-left: none;
+	border-right: none;
+  }
+  
+.fifth {
+	width: 50px; 
+	height: 20px;  
+	border: solid 3px #000;
+	border-color: #000 transparent transparent transparent;
+	border-radius: 60%/20px 20px 0 0;
+	position: fixed;
+	top: 25px;
+	left: 695px;
+	z-index: inherit;
+	background-color: rgb(250, 146, 27);
+	border-left: none;
+	border-right: none;
+  }
+  
+  
+.sixth {
+	
+	width: 65px; 
+	height: 15px; 
+	border: solid 3px #000;
+	border-color: #000 transparent transparent transparent;
+	border-radius: 50%/10px 10px 0 0;
+	position: fixed;
+	top: 31px;
+	left: 728px;
+	background-color: rgb(250, 146, 27);
+	border-left: none;
+	border-right: none;
+  }
+.seventh {
+	background-color: rgb(250, 146, 27);
+	width: 150px;
+	height: 20px;
+	border: 3px solid;
+	border-color:black black black black;
+	position: fixed;
+	z-index: 2;
+	top: 45px;
+	left: 645px;
+  }
+
+.handRestLeft {
+	background-color: rgb(250, 146, 27);
+	height: 50px;
+	width: 23px;
+	border: 3px;
+	border-color: black;
+	border-style: solid;
+	position: fixed;
+	top: 18px;
+	left: 627px;
+	z-index: 3;
+	border-radius: 100%/50px 10px 0 20px;
+}
+
+
+.handRestRight {
+	background-color: rgb(250, 146, 27);
+	height: 50px;
+	width: 23px;
+	border: 3px;
+	border-color: black;
+	border-style: solid;
+	position: fixed;
+	top: 18px;
+	left: 791px;
+	z-index: 3;
+	border-radius: 100%/10px 50px 20px 0px;
+}
+
+.deco {
+	width: 8px;
+	height: 28px;
+	border: 2px solid black;
+	border-radius: 100%/10px 10px 10px 10px;
+	background-color: rgb(250, 146, 27);
+	position: fixed;
+	top: 30px;
+	left: 796px;
+	z-index: 5;
+}
+.deco1 {
+	width: 8px;
+	height: 28px;
+	border: 2px solid black;
+	border-radius: 100%/10px 10px 10px 10px;
+	background-color: rgb(250, 146, 27);
+	position: fixed;
+	top: 30px;
+	left: 635px;
+	z-index: 5;
 }
