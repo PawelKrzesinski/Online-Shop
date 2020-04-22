@@ -3,9 +3,9 @@
 	<head>
 		<link rel="stylesheet" href="./store.css">
 		<meta charset="utf-8">
-		<script type="text/javascript" src='./shoppingcart/shoppingcart.js'></script>
 		<title>The Sofa Company</title>
-		<header>The Sofa <span class='headerSpan'>Company</span></header>	
+		<header>The Sofa <span class='headerSpan'>Company</span></header>
+		<script src="https://kit.fontawesome.com/c6015819ca.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -19,9 +19,6 @@
 					<li>Sale</li>
 					<li>Contact</li>
 					<div class='sCart' title='Shopping Cart'>
-						<button class='shoppingcart' type="button" name='button'>
-							<img src='./images/scart.webp' id='cartImg'/>
-						</button>
 						<div class='shopping-cart'>
 							<div class='title'>Your shopping cart</div>
 				
@@ -96,9 +93,15 @@
 								</div>
 				
 								<div class="total-price">$330</div>
+	
 							</div>		
 						</div>
-					<div id="shopCart">Cart</div>
+					
+					<div class='shoppingcart'>
+						<i class="fas fa-cart-plus"></i>
+						<div class="cart-items">0</div>
+					</div>
+
 					</div>
 
 				</ul>
