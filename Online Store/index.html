@@ -6,187 +6,72 @@
 		<title>The Sofa Company</title>
 		<header>The Sofa <span class='headerSpan'>Company</span></header>
 		<script src="https://kit.fontawesome.com/c6015819ca.js" crossorigin="anonymous"></script>
+
 	</head>
 
 	<body>
-		<div class="backgroundImage">
 		<div style="background-color:  #232f3e;
 				border-bottom: 15px solid #232f3e;">
+			<span class="nav-icon">
+				<i class="fas fa-bars" id="fa-bars">Menu</i>
+			</span>
+			<!-- NAVBAR -->
 			<div class='navbar'>
 				<ul id='navigation'>
-					<li>News</li>
-					<li>Shop</li>
+					<li><a href='./index.html'>Home</a></li>
+					<li><a href='./shop.html'>Shop</a></li>
 					<li>Sale</li>
 					<li>Contact</li>
-					<div class='sCart' title='Shopping Cart'>
-						<div class='shopping-cart'>
-							<div class='title'>Your shopping cart</div>
-				
-							<!--item 1 -->
-							<div class='item'>
-								<div class='buttons'>
-									<span class='delete-btn'></span>
-									<span class='like-btn'></span>
-								</div>
-				
-								<div class='image'>
-									<img src='#' alt=""/>
-								</div>
-				
-								<div class='description'>
-									<span>Description</span>
-									<span>Of some</span>
-									<span>Item</span>
-								</div>
-				
-								<div class='quantity'>
-									<button class='btn-minus' type="button" name="button">-</button>
-									<input type="text" name="name" value="1" class='input'>
-									<button class='btn-plus' type="button" name="button">+</button>
-								</div>
-								<div class="total-price">$549.99</div>
-							</div>
-				
-							<!--item 2 -->
-							<div class="item">
-								<div class="buttons">
-									<span class="delete-btn"></span>
-									<span class="like-btn"></span>
-								</div>
-								<div class='image'>
-									<img src="#" alt=""/>
-								</div>
-								<div class="description">
-									<span>Description</span>
-									<span>Of some</span>
-									<span>Item</span>
-								</div>
-								
-								<div class="quantity">
-										<button class='btn-minus' type="button" name="button">-</button>
-										<input type="text" name="name" value="1" class='input'>
-										<button class='btn-plus' type="button" name="button">+</button>
-								</div>
-				
-								<div class="total-price">$870</div>
-							</div>
-				
-							<!--item 3 -->
-							<div class="item">
-								<div class="buttons">
-									<span class="delete-btn"></span>
-									<span class="like-btn"></span>
-								</div>
-								<div class='image'>
-									<img src="#" alt=""/>
-								</div>
-								<div class="description">
-									<span>Description</span>
-									<span>Of some</span>
-									<span>Item</span>
-								</div>
-								
-								<div class="quantity">
-										<button class='btn-minus' type="button" name="button">-</button>
-										<input type="text" name="name" value="1" class='input'>
-										<button class='btn-plus' type="button" name="button">+</button>
-								</div>
-				
-								<div class="total-price">$330</div>
-	
-							</div>		
-						</div>
-					
-					<div class='shoppingcart'>
-						<i class="fas fa-cart-plus"></i>
-						<div class="cart-items">0</div>
-					</div>
-
-					</div>
-
+					<li class='basket'>Basket
+						<div class='cart-btn' title='Shopping Cart'></div>
+							<span class='nav-icon'>
+								<i class="fas fa-cart-plus"></i>
+							</span>	
+							<div class="cart-items">0</div>
+					</li>
 				</ul>
 			</div>
+			<!--END OF NAVBAR-->
 		</div>
 
-		<div class="logo">	
-			<div class='container'>
-    			<div class='top-left'></div>
-    			<div class='top-mid'></div>
-    			<div class='top-right'></div>
-    			<div class='mid-left'></div>
-    			<div class='mid-mid'></div>
-    			<div class='mid-right'></div>
-				<div class='bottom'></div>
-				<div class='handRestRight'></div>
-				<div class='deco'></div>
-				<div class='deco1'></div>
-				<div class='handRestLeft'></div>
-				<div class='deco' style='left: 608px; top: 6px;'></div>
-				<div class='deco' style='left: 624px; top: 6px;'></div>
+		<!-- BANNER -->
+		<div class='maindiv'>
+			<div class="banner">
+				<h1 class="banner-title">FURNITURE COLLECTION</h1>
+				<button class="banner-button" >
+					<a href='./shop.html'>SHOP NOW</a>
+				</button>
 			</div>
 		</div>
+		<!--END OF BANNER-->
+		<!-- PRODUCTS -->
+		<section class="products">
+			<div class="section-title">
+				<h2>OUR PRODUCT</h2>
+			</div>
+			<div class="products-center">
 
-	<div class='maindiv'>
-		<div style="font-size: 30px; padding: 50px;" class='ctxPar2'>
-			<div class='prodDiv'>
-				<img src='./images/product-1.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$20.99</p>
 			</div>
-			<div class='prodDiv'>
-				<img src='./images/product-2.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$33.99</p>
-			</div>
-			<div class='prodDiv'>
-				<img src='./images/product-3.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$45.99</p>
-			</div>
-			<div class='prodDiv'>
-				<img src='./images/product-4.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$130.99</p>
-			</div>
-			<div class='prodDiv'>
-				<img src='./images/product-5.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$31.99</p>
-			</div>
-			<div class='prodDiv'>
-				<img src='./images/product-6.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$22.99</p>
-			</div>
-			<div class='prodDiv'>
-				<img src='./images/product-7.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$26.99</p>
-			</div>
-			<div class='prodDiv'>
-				<img src='./images/product-8.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$29.99</p>
-			</div>
-			<div class='prodDiv'>
-				<img src='./images/product-1.jpeg' class='prodImg' alt="Image of an item"/>
-				<h5 class='itemDesc'>Some kind of description</h5>
-				<p class='priceTag'>$24.99</p>
-			</div>
-		</div>
-		<div style="font-size: 30px; padding: 50px;" class='ctxPar3'>	
-			Nulla eleifend feugiat ipsum rhoncus consequat. Ut nec quam magna. Sed porttitor nulla <br>
-			eget dictum blandit. Aenean sagittis odio et dui faucibus, quis maximus mi faucibus. <br>
-			Donec et placerat metus. Sed in eros eget justo efficitur tincidunt. Etiam sodales <br>
-			eleifend ex, eget venenatis justo. Nam ultricies eleifend sapien eu luctus. Quisque quis <br>
-			sodales turpis, a hendrerit felis. Aliquam sit amet ante at nulla placerat hendrerit nec <br>
-			in nisi. Nam mattis sit amet neque at tincidunt. Aliquam placerat tellus nec ligula <br>
-			fringilla sodales.
-	
-		</div>
-	</div>
+		</section>
+		<!-- END OF PRODUCTS -->
+		<!-- SHOPPING CART -->
+		<div class="cart-overlay">
+			<div class="cart">
+				<span class="close-cart">
+					<i class="fas fa-window-close"></i>
+				</span>
+				<h2>your basket</h2>
+				<div class="cart-content">
 
-
+				</div>
+				<div class="cart-footer">
+					<h3>Your total : $<span class="cart-total">0</span></h3>
+					<button class="clear-cart banner-btn">clear cart</button>
+				</div>
+			</div>
 		</div>
+		<!-- END OF CART -->
+
+		<script src="./app.js"></script>
 	</body>
 </html>
